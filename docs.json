@@ -60,7 +60,9 @@
           {
             "group": "Auth account",
             "pages": [
-              "api-reference/auth/get-account"
+              "api-reference/auth/get-account",
+              "api-reference/auth/signup",
+              "api-reference/auth/verify-account"
             ]
           },
           {
@@ -94,7 +96,16 @@
             "group": "Points",
             "pages": [
               "api-reference/points/get-events",
-              "api-reference/points/upload-config"
+              "api-reference/points/upload-config",
+              "api-reference/points/get-config"
+            ]
+          },
+          {
+            "group": "Players",
+            "pages": [
+              "api-reference/player/get-list",
+              "api-reference/player/get-by-id",
+              "api-reference/player/get-fixtures"
             ]
           },
           {
@@ -103,6 +114,13 @@
               "api-reference/user/get-list",
               "api-reference/user/create",
               "api-reference/user/update-user"
+            ]
+          },
+          {
+            "group": "Auto Substitution",
+            "pages": [
+              "api-reference/auto-substitution/get-list",
+              "api-reference/auto-substitution/process"
             ]
           },
           {
