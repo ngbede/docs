@@ -1,37 +1,47 @@
 ---
 title: "Quickstart"
-description: "Set up your first fantasy league in minutes."
+description: "Set up a fantasy league, scoring, pricing, and squads in a few steps."
 ---
 
 ## Get started in four steps
 
 <Steps>
 <Step title="Get your API key">
-Create a free account and verify your email to receive your API key. You will use this key in the `x-api-key` header on every request.
+Create a free account, verify your email, and retrieve your API key. You will use this key in the `x-api-key` header on every request.
 
-Read the full guide: [Get your API key](/guides/get-api-key).
+Read the guide: [Get your API key](/guides/get-api-key).
 </Step>
 
 <Step title="Create your first fantasy league">
-Create the league your users will play in. This becomes the parent for your mini leagues, squads, and pricing.
+Create the core league your users will play in. You will use the returned `fantasy_league_id` in mini leagues, squads, and pricing.
 
 Start here: [Create fantasy league](/api-reference/fantasy-league/create).
 </Step>
 
 <Step title="Configure points and player prices">
-Upload your points configuration and player prices so lineups can be scored and priced correctly.
+Upload your points configuration and player prices so lineups can be scored and priced correctly for the league.
 
 - [Upload points config](/api-reference/points/upload-config)
 - [Upload player prices](/api-reference/price/upload)
 </Step>
 
 <Step title="Launch mini leagues and squads">
-Create mini leagues for competition and squads for users to manage lineups across the season.
+Create mini leagues for competition and squads for your users to manage lineups across the season.
 
 - [Create mini league](/api-reference/mini-league/create)
 - [Create squad](/api-reference/squad/create)
 </Step>
 </Steps>
+
+## Base URL and auth
+
+Base URL: `https://sandbox.api.fantasyfutbol.app/v1`
+
+All requests require the API key header:
+
+```http
+x-api-key: YOUR_API_KEY
+```
 
 ## Next guides
 

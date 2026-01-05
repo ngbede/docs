@@ -4,7 +4,7 @@ description: "Create and manage the core leagues your fantasy experience is buil
 ---
 
 ## Overview
-Fantasy leagues are the foundation for mini leagues, squads, and scoring. Start by creating a league, then load clubs, gameweeks, and fixtures as needed.
+Fantasy leagues are the foundation for mini leagues, squads, points, and pricing. Start here and store the `fantasy_league_id` for subsequent requests.
 
 ## Key endpoints
 - [Create fantasy league](/api-reference/fantasy-league/create)
@@ -19,14 +19,19 @@ Fantasy leagues are the foundation for mini leagues, squads, and scoring. Start 
 
 <Steps>
 <Step title="Create the league">
-Create a new fantasy league to act as the parent for mini leagues, squads, points, and prices.
+Create a new fantasy league and capture the `fantasy_league_id` from the response.
 </Step>
 
-<Step title="Fetch league data">
-Pull clubs, gameweeks, and fixtures for the league to populate your client experience.
+<Step title="Load season data">
+Fetch clubs, gameweeks, and fixtures to populate your client experience and to align with your season timeline.
 </Step>
 
-<Step title="Iterate and update">
-If your league configuration changes, update it and re-fetch the data you display to users.
+<Step title="Keep details current">
+Use the update endpoint if the league configuration changes. Re-sync any cached league data as needed.
 </Step>
 </Steps>
+
+## What to set up next
+- [Mini leagues](/guides/mini-leagues)
+- [Points configuration](/guides/points)
+- [Player prices](/guides/player-prices)
