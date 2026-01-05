@@ -1,0 +1,37 @@
+---
+title: "Get your API key"
+description: "Create an account and retrieve the API key used to authenticate requests."
+---
+
+## Overview
+You need an API key to call any Fantasy Futbol endpoint. Requests are authenticated with the `x-api-key` header.
+
+Base URL: `https://sandbox.api.fantasyfutbol.app/v1`
+
+## Steps
+
+<Steps>
+<Step title="Sign up">
+Send a signup request to create your account.
+
+- [Signup endpoint](/api-reference/auth/signup)
+</Step>
+
+<Step title="Verify your email">
+Check your inbox for the verification email and complete the verification step.
+
+- [Verify account endpoint](/api-reference/auth/verify-account)
+</Step>
+
+<Step title="Retrieve your API key">
+Once verified, you will receive a secure PrivateBin link to access your API key. The link expires after 1 hour, so copy and store the key safely.
+
+- [Getting your API key](/api-reference/get-api-key)
+</Step>
+</Steps>
+
+## Use the key in requests
+
+```http
+x-api-key: YOUR_API_KEY
+```
